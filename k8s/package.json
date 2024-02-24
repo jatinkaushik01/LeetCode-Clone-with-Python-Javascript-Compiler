@@ -1,0 +1,14 @@
+{
+    "name": "nodejs-app",
+    "version": "1.0.0",
+    "description": "Node.js Application for Code Execution",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      // Add your Node.js dependencies here, if any
+    }
+  }
+
+  
