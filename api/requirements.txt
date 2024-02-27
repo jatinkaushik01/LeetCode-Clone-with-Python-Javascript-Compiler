@@ -2,4 +2,4 @@ flask
 gunicorn
 Js2Py
 Flask-Cors
-
+requests
