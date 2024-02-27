@@ -11,12 +11,22 @@ app.use(bodyParser.json());
 app.post('/submit_js_code', (req, res) => {
     try {
         const jsCode = req.body.js_code;
+        console.log(jsCode)
         const result = runJavaScript(jsCode); // Implement the logic to run JS code
         res.json({ result });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
 });
+
+app.get('/', (req, res) => {
+    try {
+        res.json("result");
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+});
+
 
 function runJavaScript(jsCode) {
     // Implement the logic to run JS code

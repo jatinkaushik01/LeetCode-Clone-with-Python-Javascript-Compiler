@@ -41,7 +41,8 @@ def run_test_case():
 	if(extension=="py"):
 		output = tester.test_py(code)
 	else:
-		output = tester.test_js(code)
+		# output = tester.test_js(code)
+		output = compiler.execute_js(code)
 
 	return {"message":output}
 
