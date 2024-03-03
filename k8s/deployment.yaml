@@ -1,23 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: leetcode-deployment
-  labels:
-    app: leetcode
+  name: nodejs-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: leetcode
+      app: nodejs-app
   template:
     metadata:
       labels:
-        app: leetcode
+        app: nodejs-app
     spec:
       containers:
-      - name: leetcode-container
-        image: devopsingh853/leetcode_k8s:latest
+      - name: nodejs-app
+        image: devopsingh853/my-app:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080
+
 
 
