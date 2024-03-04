@@ -38,9 +38,14 @@ def execute_js(code):
 	try:
 
 		print("I am Here!")
+<<<<<<< HEAD
 		#url = 'https://friendly-zebra-x55wrj6qr59gcwjv-8080.app.github.dev/submit_js_code'
 		# url = 'http://localhost:8080/submit_js_code'
 		url = "http://192.168.49.2/submit_js_code"
+=======
+		url = 'https://friendly-zebra-x55wrj6qr59gcwjv-8080.app.github.dev/submit_js_code'
+		# url = 'http://localhost:8080/submit_js_code'
+>>>>>>> fbe3676a5207f5d4389353cdaa9a2d47ad120dc1
 		dataToSend = {'js_code': code}
 		x = requests.post(url, data = dataToSend)
 		print(x.text)
